@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Hello, WebVR! - A-Frame</title>
+  <meta name="description" content="Hello, WebVR! - A-Frame">
+  <script src="./bower_components/aframe.min/index.js"></script>
+  <script src="./bower_components/aframe-physics-system.min/index.js"></script>
+  <script src="./bower_components/aframe-environment-component.min/index.js"></script>
+  <script src="./bower_components/aframe-leap-hands.min/index.js"></script>
+  <script src="./bower_components/aframe-log-component.min/index.js"></script>
+  <script src="./bower_components/aframe-ui-widgets.min/index.js"></script>
+  <script src="./bower_components/aframe-event-set-component.min/index.js"></script>
+  <script src="./bower_components/aframe-crawling-cursor.min/index.js"></script>
+
+  <script>
+    AFRAME.registerComponent('intersection-spawn', {
+      schema: {
+        default: '',
+        parse: AFRAME.utils.styleParser.parse
+      },
+
+      init: function() {
+        const data = this.data;
+        const el = this.el;
+
+        el.addEventListener(data.event, evt => {
+          // Create element.
+          const spawnEl = document.createElement('a-entity');
+
+          // Snap intersection point to grid and offset from center.
+          spawnEl.setAttribute('position', evt.detail.intersection.point);
+
+          // Set components and properties.
+          Object.keys(data).forEach(name => {
+            if (name === 'event') {
+              return;
+            }
+            AFRAME.utils.entity.setComponentProperty(spawnEl, name, data[name]);
+          });
+
+          // Append to scene.
+          el.sceneEl.appendChild(spawnEl);
+        });
+      }
+    });
+  </script>
+</head>
+
+<body>
+  <a-scene>
+    <a-assets>
+      <a-mixin id="button" ui-button></a-mixin>
+    </a-assets>
+
+
+    <a-entity environment="preset: default;"></a-entity>
+
+    <a-box position="-1 0.5 -4" rotation="0 45 0" color="#4CC3D9"></a-box>
+    <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+    <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+
+    <a-entity camera="near: 0.01" look-controls wasd-controls position="0 1.5 0">
+      <!-- <a-entity cursor="fuse: true; fuseTimeout: 500" position="0 0 -0.5" geometry="primitive: ring; radiusInner: 0.0075; radiusOuter: 0.01" material="color: white; transparent: true; opacity: 1; shader: flat" intersection-spawn="event: click; mixin: button"> -->
+      <a-entity cursor position="0 0 -0.5" geometry="primitive: ring; radiusInner: 0.0075; radiusOuter: 0.01" material="color: white; transparent: true; opacity: 1; shader: flat">
+        <a-animation begin="click" easing="ease-in" attribute="scale" dur="150" fill="forwards" from="0.1 0.1 0.1" to="1 1 1"></a-animation>
+        <a-animation begin="cursor-fusing" easing="ease-in" attribute="scale" dur="1500" fill="backwards" from="1 1 1" to="0.1 0.1 0.1"></a-animation>
+      </a-entity>
+      <a-entity leap-hand="hand: left;"></a-entity>
+      <a-entity leap-hand="hand: right;"></a-entity>
+
+    </a-entity>
+    <a-entity windows-motion-controls="hand: left"></a-entity>
+    <a-entity windows-motion-controls="hand: right"></a-entity>
+    <a-plane log geometry="width: 10; height: 10" material="color: #111; opacity: 0.5" text="color: lightgreen" position="-2 5 -10"></a-plane>
+
+    <a-entity id="mybutton" ui-button position="0 1 -0.5"></a-entity>
+
+  </a-scene>
+</body>
+
+<script>
+  // AFRAME.log("hello world");
+  // var mybutton = document.querySelector('#mybutton');
+  // mybutton.addEventListener('pressed', function() {
+  //   AFRAME.log("button pressed");
+  // });
+  //
+  // // var mybutton = document.querySelector('a-box');
+  // mybutton.addEventListener('click', function() {
+  //   // AFRAME.log("box clicked");
+  //   mybutton.emit('pressed');
+  // });
+</script>
+
+</html>

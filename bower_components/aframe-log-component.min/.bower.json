@@ -1,0 +1,14 @@
+{
+  "name": "aframe-log-component.min",
+  "_cacheHeaders": {
+    "ETag": "W/\"6ee-15cad1c6be0\"",
+    "Last-Modified": "Thu, 15 Jun 2017 18:55:40 GMT",
+    "Content-Type": "application/javascript; charset=utf-8"
+  },
+  "_release": "e-tag:W/\"6ee-15c",
+  "main": "index.js",
+  "_source": "https://unpkg.com/aframe-log-component/dist/aframe-log-component.min.js",
+  "_target": "*",
+  "_originalSource": "https://unpkg.com/aframe-log-component/dist/aframe-log-component.min.js",
+  "_direct": true
+}

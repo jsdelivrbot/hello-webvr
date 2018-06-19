@@ -1,0 +1,12 @@
+{
+  "name": "aframe.min",
+  "_cacheHeaders": {
+    "Last-Modified": "Sun, 15 Apr 2018 20:09:45 GMT",
+    "Content-Type": "application/javascript; charset=utf-8"
+  },
+  "main": "index.js",
+  "_source": "https://aframe.io/releases/0.8.2/aframe.min.js",
+  "_target": "*",
+  "_originalSource": "https://aframe.io/releases/0.8.2/aframe.min.js",
+  "_direct": true
+}

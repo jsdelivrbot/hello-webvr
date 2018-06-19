@@ -1,0 +1,14 @@
+{
+  "name": "aframe-event-set-component.min",
+  "_cacheHeaders": {
+    "ETag": "W/\"4f0-1625001e808\"",
+    "Last-Modified": "Thu, 22 Mar 2018 23:18:45 GMT",
+    "Content-Type": "application/javascript; charset=utf-8"
+  },
+  "_release": "e-tag:W/\"4f0-162",
+  "main": "index.js",
+  "_source": "https://unpkg.com/aframe-event-set-component@^4.0.0/dist/aframe-event-set-component.min.js",
+  "_target": "*",
+  "_originalSource": "https://unpkg.com/aframe-event-set-component@^4.0.0/dist/aframe-event-set-component.min.js",
+  "_direct": true
+}

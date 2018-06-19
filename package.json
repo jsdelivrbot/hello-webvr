@@ -1,0 +1,20 @@
+{
+  "name": "tfjs-vab",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "license": "Apache-2.0",
+  "private": true,
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "dependencies": {
+  },
+  "scripts": {
+    "watch": "NODE_ENV=development parcel --no-hmr --open index.html ",
+    "build": "NODE_ENV=production parcel build index.html  --no-minify --public-url ./"
+  },
+  "devDependencies": {
+    "parcel-bundler": "~1.7.0"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "aframe-ui-widgets.min",
+  "_cacheHeaders": {
+    "ETag": "W/\"b97676ad1622d1536babc2bc1f4c816ce4674990\"",
+    "Content-Type": "application/javascript;charset=utf-8"
+  },
+  "_release": "e-tag:W/\"b97676a",
+  "main": "index.js",
+  "_source": "https://rawgit.com/caseyyee/aframe-ui-widgets/master/dist/aframe-ui-widgets.min.js",
+  "_target": "*",
+  "_originalSource": "https://rawgit.com/caseyyee/aframe-ui-widgets/master/dist/aframe-ui-widgets.min.js",
+  "_direct": true
+}

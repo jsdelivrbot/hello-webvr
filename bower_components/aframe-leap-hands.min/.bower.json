@@ -1,0 +1,14 @@
+{
+  "name": "aframe-leap-hands.min",
+  "_cacheHeaders": {
+    "ETag": "W/\"1710d-15b22a51580\"",
+    "Last-Modified": "Fri, 31 Mar 2017 04:34:56 GMT",
+    "Content-Type": "application/javascript; charset=utf-8"
+  },
+  "_release": "e-tag:W/\"1710d-1",
+  "main": "index.js",
+  "_source": "https://unpkg.com/aframe-leap-hands/dist/aframe-leap-hands.min.js",
+  "_target": "*",
+  "_originalSource": "https://unpkg.com/aframe-leap-hands/dist/aframe-leap-hands.min.js",
+  "_direct": true
+}

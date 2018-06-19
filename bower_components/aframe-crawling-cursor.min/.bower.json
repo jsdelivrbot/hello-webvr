@@ -1,0 +1,13 @@
+{
+  "name": "aframe-crawling-cursor.min",
+  "_cacheHeaders": {
+    "ETag": "W/\"fa751ffef0306d4d6500e286c12d262a747b4ef8\"",
+    "Content-Type": "application/javascript;charset=utf-8"
+  },
+  "_release": "e-tag:W/\"fa751ff",
+  "main": "index.js",
+  "_source": "https://cdn.rawgit.com/jujunjun110/aframe-crawling-cursor/master/dist/aframe-crawling-cursor.min.js",
+  "_target": "*",
+  "_originalSource": "https://cdn.rawgit.com/jujunjun110/aframe-crawling-cursor/master/dist/aframe-crawling-cursor.min.js",
+  "_direct": true
+}

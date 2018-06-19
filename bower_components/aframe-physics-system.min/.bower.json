@@ -1,0 +1,13 @@
+{
+  "name": "aframe-physics-system.min",
+  "_cacheHeaders": {
+    "ETag": "W/\"5dd8c068ab2a99d8a37021650acf7081ea608f8e\"",
+    "Content-Type": "application/javascript;charset=utf-8"
+  },
+  "_release": "e-tag:W/\"5dd8c06",
+  "main": "index.js",
+  "_source": "https://cdn.rawgit.com/donmccurdy/aframe-physics-system/v3.1.2/dist/aframe-physics-system.min.js",
+  "_target": "*",
+  "_originalSource": "https://cdn.rawgit.com/donmccurdy/aframe-physics-system/v3.1.2/dist/aframe-physics-system.min.js",
+  "_direct": true
+}
