@@ -1,0 +1,14 @@
+{
+  "name": "aframe-state-component.min",
+  "_cacheHeaders": {
+    "ETag": "W/\"28af-1640d844690\"",
+    "Last-Modified": "Sun, 17 Jun 2018 11:32:10 GMT",
+    "Content-Type": "application/javascript; charset=utf-8"
+  },
+  "_release": "e-tag:W/\"28af-16",
+  "main": "index.js",
+  "_source": "https://unpkg.com/aframe-state-component@^3.0.0/dist/aframe-state-component.min.js",
+  "_target": "*",
+  "_originalSource": "https://unpkg.com/aframe-state-component@^3.0.0/dist/aframe-state-component.min.js",
+  "_direct": true
+}

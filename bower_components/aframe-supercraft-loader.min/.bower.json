@@ -1,0 +1,14 @@
+{
+  "name": "aframe-supercraft-loader.min",
+  "_cacheHeaders": {
+    "ETag": "W/\"12019-163dc479d98\"",
+    "Last-Modified": "Thu, 07 Jun 2018 22:04:31 GMT",
+    "Content-Type": "application/javascript; charset=utf-8"
+  },
+  "_release": "e-tag:W/\"12019-1",
+  "main": "index.js",
+  "_source": "https://unpkg.com/aframe-supercraft-loader/dist/aframe-supercraft-loader.min.js",
+  "_target": "*",
+  "_originalSource": "https://unpkg.com/aframe-supercraft-loader/dist/aframe-supercraft-loader.min.js",
+  "_direct": true
+}

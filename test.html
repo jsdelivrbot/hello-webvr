@@ -1,0 +1,46 @@
+<html>
+
+<head>
+  <title>My A-Frame Scene</title>
+  <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+  <script src="./bower_components/aframe-environment-component/index.js"></script>
+  <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v3.12.4/dist/aframe-extras.min.js"></script>
+  <script src="https://unpkg.com/super-hands@2.1.0/dist/super-hands.min.js"></script>
+  <script src="./bower_components/aframe-log-component.min/index.js"></script>
+  <script src="./components/intersection-spawn.js"></script>
+  <!-- <script src="./bower_components/aframe-supercraft-loader.min/index.js"></script> -->
+
+</head>
+
+<body>
+  <a-scene>
+
+    <a-assets>
+      <a-mixin id="mouse-cursor" cursor="rayOrigin: mouse"></a-mixin>
+      <a-mixin id="orbit" orbit-controls="target: 0 1.6 -0.5; minDistance: 0.5; maxDistance: 180; initialPosition: 0 1.6 0"></a-mixin>
+      <a-mixin id="interactable" hoverable grabbable stretchable draggable dropppable></a-mixin>
+    </a-assets>
+
+    <!-- <a-entity supercraft-loader="name: clear-bead" static-environment></a-entity> -->
+
+
+    <!-- log panel -->
+    <a-plane id="log" log geometry="width: 5; height: 10" material="color: #111; opacity: 0.5" text="color: lightgreen" position="0 5 -5" rotation="0 0 0"></a-plane>
+    <a-entity progressive-controls="gazeMixin: mouse-cursor; objects: a-box;" position="0 1.6 0"></a-entity>
+    <!-- hover & drag-drop won't have any obvious effect without some additional event handlers or components. See the examples page for more -->
+    <a-box mixin="interactable" color="blue" position="0 0 -2"></a-box>
+
+    <!-- Floor -->
+    <!-- <a-plane static-body color="grey" rotation="-90 0 0" width="30" height="30"></a-plane> -->
+    <a-entity id="environment1" environment="preset: arches;" static-environment></a-entity>
+
+    <!-- Immovable box -->
+    <a-box static-body mixin="interactable" position="0 0.5 -5" width="3" height="1" depth="1" color="green"></a-box>
+
+    <!-- Dynamic box -->
+    <a-box dynamic-body mixin="interactable" position="-1 2 -2" width="1" height="1" depth="1" color="red"></a-box>
+
+  </a-scene>
+</body>
+
+</html>

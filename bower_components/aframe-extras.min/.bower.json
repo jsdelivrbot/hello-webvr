@@ -1,0 +1,13 @@
+{
+  "name": "aframe-extras.min",
+  "_cacheHeaders": {
+    "ETag": "W/\"11785909cf74bf40099c0d9bc9564600c5b9e103\"",
+    "Content-Type": "application/javascript;charset=utf-8"
+  },
+  "_release": "e-tag:W/\"1178590",
+  "main": "index.js",
+  "_source": "https://cdn.rawgit.com/donmccurdy/aframe-extras/v3.13.1/dist/aframe-extras.min.js",
+  "_target": "*",
+  "_originalSource": "https://cdn.rawgit.com/donmccurdy/aframe-extras/v3.13.1/dist/aframe-extras.min.js",
+  "_direct": true
+}

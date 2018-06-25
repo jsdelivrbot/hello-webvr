@@ -1,0 +1,13 @@
+{
+  "name": "aframe-material.min",
+  "_cacheHeaders": {
+    "ETag": "W/\"51f1ac7ba52490fe79788b7a45a7801635f82610\"",
+    "Content-Type": "application/javascript;charset=utf-8"
+  },
+  "_release": "e-tag:W/\"51f1ac7",
+  "main": "index.js",
+  "_source": "https://cdn.rawgit.com/etiennepinchon/aframe-material/master/dist/aframe-material.min.js",
+  "_target": "*",
+  "_originalSource": "https://cdn.rawgit.com/etiennepinchon/aframe-material/master/dist/aframe-material.min.js",
+  "_direct": true
+}

@@ -1,0 +1,13 @@
+{
+  "name": "aframe-environment-component",
+  "_cacheHeaders": {
+    "ETag": "W/\"70b3ed12d096a3c9bfc893ad783173dea4033444\"",
+    "Content-Type": "application/javascript;charset=utf-8"
+  },
+  "_release": "e-tag:W/\"70b3ed1",
+  "main": "index.js",
+  "_source": "https://rawgit.com/feiss/aframe-environment-component/master/dist/aframe-environment-component.js",
+  "_target": "*",
+  "_originalSource": "https://rawgit.com/feiss/aframe-environment-component/master/dist/aframe-environment-component.js",
+  "_direct": true
+}

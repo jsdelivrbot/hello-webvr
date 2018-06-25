@@ -1,0 +1,14 @@
+{
+  "name": "aframe-look-at-component.min",
+  "_cacheHeaders": {
+    "ETag": "W/\"4ea-15ca58415e0\"",
+    "Last-Modified": "Wed, 14 Jun 2017 07:31:56 GMT",
+    "Content-Type": "application/javascript; charset=utf-8"
+  },
+  "_release": "e-tag:W/\"4ea-15c",
+  "main": "index.js",
+  "_source": "https://unpkg.com/aframe-look-at-component@0.5.1/dist/aframe-look-at-component.min.js",
+  "_target": "*",
+  "_originalSource": "https://unpkg.com/aframe-look-at-component@0.5.1/dist/aframe-look-at-component.min.js",
+  "_direct": true
+}

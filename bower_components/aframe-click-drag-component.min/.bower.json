@@ -1,0 +1,14 @@
+{
+  "name": "aframe-click-drag-component.min",
+  "_cacheHeaders": {
+    "ETag": "W/\"237a-159108daf30\"",
+    "Last-Modified": "Sun, 18 Dec 2016 06:10:38 GMT",
+    "Content-Type": "application/javascript; charset=utf-8"
+  },
+  "_release": "e-tag:W/\"237a-15",
+  "main": "index.js",
+  "_source": "https://unpkg.com/aframe-click-drag-component@3.0.1/dist/aframe-click-drag-component.min.js",
+  "_target": "*",
+  "_originalSource": "https://unpkg.com/aframe-click-drag-component@3.0.1/dist/aframe-click-drag-component.min.js",
+  "_direct": true
+}

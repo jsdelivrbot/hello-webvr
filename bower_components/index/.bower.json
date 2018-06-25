@@ -1,0 +1,14 @@
+{
+  "name": "index",
+  "_cacheHeaders": {
+    "ETag": "W/\"4edb-159108db318\"",
+    "Last-Modified": "Sun, 18 Dec 2016 06:10:39 GMT",
+    "Content-Type": "application/javascript; charset=utf-8"
+  },
+  "_release": "e-tag:W/\"4edb-15",
+  "main": "index.js",
+  "_source": "https://unpkg.com/aframe-click-drag-component@3.0.1/lib/index.js",
+  "_target": "*",
+  "_originalSource": "https://unpkg.com/aframe-click-drag-component@3.0.1/lib/index.js",
+  "_direct": true
+}

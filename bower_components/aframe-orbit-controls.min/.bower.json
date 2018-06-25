@@ -1,0 +1,14 @@
+{
+  "name": "aframe-orbit-controls.min",
+  "_cacheHeaders": {
+    "ETag": "W/\"48d3-163eba7ba20\"",
+    "Last-Modified": "Sun, 10 Jun 2018 21:43:48 GMT",
+    "Content-Type": "application/javascript; charset=utf-8"
+  },
+  "_release": "e-tag:W/\"48d3-16",
+  "main": "index.js",
+  "_source": "https://unpkg.com/aframe-orbit-controls@1.0.0/dist/aframe-orbit-controls.min.js",
+  "_target": "*",
+  "_originalSource": "https://unpkg.com/aframe-orbit-controls@1.0.0/dist/aframe-orbit-controls.min.js",
+  "_direct": true
+}

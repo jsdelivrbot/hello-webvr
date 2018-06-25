@@ -1,0 +1,13 @@
+{
+  "name": "aframe-gui.min",
+  "_cacheHeaders": {
+    "ETag": "W/\"b3c96fffd0342cd9add4dbc34c2c64733ff3fe8b\"",
+    "Content-Type": "application/javascript;charset=utf-8"
+  },
+  "_release": "e-tag:W/\"b3c96ff",
+  "main": "index.js",
+  "_source": "https://rawgit.com/rdub80/aframe-gui/master/dist/aframe-gui.min.js",
+  "_target": "*",
+  "_originalSource": "https://rawgit.com/rdub80/aframe-gui/master/dist/aframe-gui.min.js",
+  "_direct": true
+}

@@ -1,0 +1,14 @@
+{
+  "name": "aframe-haptics-component.min",
+  "_cacheHeaders": {
+    "ETag": "W/\"658-161cc04e3c0\"",
+    "Last-Modified": "Sun, 25 Feb 2018 08:12:08 GMT",
+    "Content-Type": "application/javascript; charset=utf-8"
+  },
+  "_release": "e-tag:W/\"658-161",
+  "main": "index.js",
+  "_source": "https://unpkg.com/aframe-haptics-component/dist/aframe-haptics-component.min.js",
+  "_target": "*",
+  "_originalSource": "https://unpkg.com/aframe-haptics-component/dist/aframe-haptics-component.min.js",
+  "_direct": true
+}

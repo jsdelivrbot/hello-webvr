@@ -2,19 +2,101 @@
 <html>
 
 <head>
-  <title>My A-Frame Scene</title>
-  <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
-  <script src="https://unpkg.com/aframe-firebase-component@^4.0.0/dist/aframe-firebase-component.min.js"></script>
+  <title>Hello, WebVR! - A-Frame</title>
+  <script src="./bower_components/aframe.min/index.js"></script>
+  <script src="./bower_components/aframe-environment-component/index.js"></script>
+  <!-- <script src="./bower_components/aframe-supercraft-loader.min/index.js"></script> -->
+  <!-- <script src="./bower_components/aframe-leap-hands.min/index.js"></script> -->
+  <script src="./bower_components/aframe-log-component.min/index.js"></script>
+  <!-- <script src="./bower_components/aframe-ui-widgets.min/index.js"></script> -->
+  <script src="./bower_components/aframe-event-set-component.min/index.js"></script>
+  <script src="./bower_components/aframe-firebase-component.min/index.js"></script>
+  <script src="./bower_components/aframe-look-at-component.min/index.js"></script>
+  <script src="./bower_components/aframe-extras.min/index.js"></script>
+  <!-- <script src="./bower_components/aframe-animation-component.min/index.js"></script> -->
+  <script src="./bower_components/aframe-orbit-controls.min/index.js"></script>
+  <!-- <script src="./bower_components/aframe-state-component.min/index.js"></script> -->
+  <script src="./bower_components/aframe-material.min/index.js"></script>
+  <script type="text/javascript">
+    AFRAME.ASSETS_PATH = "./assets";
+  </script>
+  <!-- <script src="./bower_components/aframe-gui.min/index.js"></script> -->
+  <script src="./bower_components/super-hands/index.js"></script>
+  <!-- <script src="https://unpkg.com/super-hands@2.1.0/dist/super-hands.min.js"></script> -->
+  <script src="./components/intersection-spawn.js"></script>
+  <!-- <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+  <script src="https://unpkg.com/aframe-orbit-controls@1.0.0/dist/aframe-orbit-controls.min.js"></script>
+  <script src="https://unpkg.com/aframe-supercraft-loader@1.1.3/dist/aframe-supercraft-loader.js"></script> -->
 </head>
 
 <body>
-  <a-scene firebase="apiKey: AIzaSyBCHOvtClq9VZWrvTiwlMd0CYYEwo7kgRg; authDomain: hellow-webvr.firebaseapp.com; databaseURL: https://hellow-webvr.firebaseio.com; storageBucket: hellow-webvr.appspot.com">
+  <a-scene>
     <a-assets>
+      <!-- <a-mixin id="button" gui-item="type: button; width: 1.5; height: 0.5;" gui-button="text: Button; fontFamily: Helvetica;"></a-mixin>
+      <a-mixin id="slider" gui-item="type: slider; width: 1.5; height: 0.5;" gui-slider="percent: 0.7;"></a-mixin>
+      <a-mixin id="vertical-container" gui-flex-container="flexDirection: column; justifyContent: center; alignItems: normal; componentPadding: 0.1; opacity: 0.7"></a-mixin>
+      <a-mixin id="horizontal-container" gui-flex-container="flexDirection: row; justifyContent: center; alignItems: normal; componentPadding: 0.1; opacity: 0.7"></a-mixin> -->
+
+      <a-mixin id="mouse-cursor" cursor="rayOrigin: mouse"></a-mixin>
+      <a-mixin id="orbit" orbit-controls="target: 0 1.6 -0.5; minDistance: 0.5; maxDistance: 180; initialPosition: 0 1.6 0"></a-mixin>
+
+      <a-mixin id="interactable" hoverable grabbable stretchable draggable dropppable></a-mixin>
+
+      <a-mixin id="log-plane" geometry="width: 5; height: 10" material="color: #111; opacity: 0.5" text="color: lightgreen" clickable></a-mixin>
+
       <a-mixin id="avatar-head" geometry="primitive: box; depth: 0.3; height: 0.3; width: 0.3" material="color: #222"></a-mixin>
+      <a-mixin id="my-firebase" firebase="apiKey: abc; authDomain: mysite.firebaseapp.com; databaseURL: https://mysite.firebaseio.com; storageBucket: mysite.appspot.com"></a-mixin>
     </a-assets>
 
-    <a-entity id="avatar" mixin="avatar-head" camera look-controls wasd-controls firebase-broadcast="components: mixin, position, rotation" position="0 1.8 5"></a-entity>
+    <!-- environment -->
+    <!-- <a-entity supercraft-loader="name: lamentable-net"></a-entity> -->
+    <a-entity environment="preset: japan"></a-entity>
+
+    <!-- some regular objects -->
+    <a-box id="box" position="-1 3 -4" rotation="0 45 0" color="#4CC3D9" mixin="interactable" dynamic-body></a-box>
+
+    <!-- log panel -->
+    <a-plane id="log" log mixin="log-plane" position="0 5 -5" rotation="0 0 0"></a-plane>
+
+
+    <!-- camera rig -->
+    <a-entity progressive-controls="gazeMixin: mouse-cursor; objects: [clickable];" position="0 0 0"></a-entity>
+
+    <!-- BEGIN INPUTS/KEYBOARD -->
+    <a-keyboard></a-keyboard>
+    <a-input position="-0.7 1 -2.5" placeholder="Username" color="black" width="1" clickable></a-input>
+    <a-input position="-0.7 0.8 -2.5" type="password" placeholder="Password" color="black" width="1" mixin="interactable"></a-input>
+    <!-- END INPUTS/KEYBOARD -->
+
+    <!-- BEGIN FORM -->
+    <a-rounded position="0.5 0.5 -2.5" width="4" height="3.1" radius="0.05" rotation="0 -20 0" scale="0.3 0.3 0.3">
+      <a-form>
+        <a-switch position="0.2 2.7 0" enabled="true"></a-switch>
+        <a-radio position="0.2 2.4 0" width="3" name="food" label="Burger with fries and pizza" value="pizza"></a-radio>
+        <a-radio position="0.2 2.1 0" width="3" name="food" label="Veggies" checked="true" disabled="true"></a-radio>
+        <a-radio position="0.2 1.8 0" width="3" name="food" label="Ice cream"></a-radio>
+        <a-checkbox position="0.2 1.5 0" width="3" name="stuff" label="I am a checkbox" checked="true"></a-checkbox>
+        <a-checkbox position="0.2 1.2 0" width="3" name="stuff" label="And I am another one" checked="true" disabled="true"></a-checkbox>
+        <a-button position="0.2 0.8 0" name="stuff" value="Click me" type="raised" clickable></a-button>
+        <a-button position="0.2 0.35 0" width="3" name="stuff" value="You cannot click me" disabled="true"></a-button>
+      </a-form>
+    </a-rounded>
+    <!-- END FORM -->
+
+    <!-- BEGIN TOAST -->
+    <a-toast message="This is a toast" action="Got it"></a-toast>
+    <!-- END TOAST -->
+
+    <!-- motion coontroller -->
+    <!-- <a-entity windows-motion-controls="hand: left"></a-entity>
+    <a-entity windows-motion-controls="hand: right"></a-entity> -->
+
+
   </a-scene>
+
+
+  <script src="./index.js"></script>
+
 </body>
 
 </html>

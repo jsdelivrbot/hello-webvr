@@ -1,0 +1,14 @@
+{
+  "name": "aframe-firebase-component.min",
+  "_cacheHeaders": {
+    "ETag": "W/\"4b178-15cd621c788\"",
+    "Last-Modified": "Fri, 23 Jun 2017 18:05:57 GMT",
+    "Content-Type": "application/javascript; charset=utf-8"
+  },
+  "_release": "e-tag:W/\"4b178-1",
+  "main": "index.js",
+  "_source": "https://unpkg.com/aframe-firebase-component@^4.0.0/dist/aframe-firebase-component.min.js",
+  "_target": "*",
+  "_originalSource": "https://unpkg.com/aframe-firebase-component@^4.0.0/dist/aframe-firebase-component.min.js",
+  "_direct": true
+}

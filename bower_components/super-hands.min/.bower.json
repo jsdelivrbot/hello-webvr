@@ -1,0 +1,14 @@
+{
+  "name": "super-hands.min",
+  "_cacheHeaders": {
+    "ETag": "W/\"83bf-15f5ef6a3d8\"",
+    "Last-Modified": "Fri, 27 Oct 2017 17:52:23 GMT",
+    "Content-Type": "application/javascript; charset=utf-8"
+  },
+  "_release": "e-tag:W/\"83bf-15",
+  "main": "index.js",
+  "_source": "https://unpkg.com/super-hands@2.1.0/dist/super-hands.min.js",
+  "_target": "*",
+  "_originalSource": "https://unpkg.com/super-hands@2.1.0/dist/super-hands.min.js",
+  "_direct": true
+}

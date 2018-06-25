@@ -1,0 +1,14 @@
+{
+  "name": "aframe-animation-component.min",
+  "_cacheHeaders": {
+    "ETag": "W/\"5206-16308bf0ee8\"",
+    "Last-Modified": "Fri, 27 Apr 2018 20:15:29 GMT",
+    "Content-Type": "application/javascript; charset=utf-8"
+  },
+  "_release": "e-tag:W/\"5206-16",
+  "main": "index.js",
+  "_source": "https://unpkg.com/aframe-animation-component@^4.1.2/dist/aframe-animation-component.min.js",
+  "_target": "*",
+  "_originalSource": "https://unpkg.com/aframe-animation-component@^4.1.2/dist/aframe-animation-component.min.js",
+  "_direct": true
+}
