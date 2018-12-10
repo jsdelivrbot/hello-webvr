@@ -6,8 +6,8 @@
   },
   "_release": "e-tag:W/\"5dd8c06",
   "main": "index.js",
-  "_source": "https://cdn.rawgit.com/donmccurdy/aframe-physics-system/v3.1.2/dist/aframe-physics-system.min.js",
+  "_source": "https://cdn.jsdelivr.net/gh/donmccurdy/aframe-physics-system@v3.1.2/dist/aframe-physics-system.min.js",
   "_target": "*",
-  "_originalSource": "https://cdn.rawgit.com/donmccurdy/aframe-physics-system/v3.1.2/dist/aframe-physics-system.min.js",
+  "_originalSource": "https://cdn.jsdelivr.net/gh/donmccurdy/aframe-physics-system@v3.1.2/dist/aframe-physics-system.min.js",
   "_direct": true
 }

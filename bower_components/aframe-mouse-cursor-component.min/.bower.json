@@ -6,8 +6,8 @@
   },
   "_release": "e-tag:W/\"8c0690a",
   "main": "index.js",
-  "_source": "https://rawgit.com/mayognaise/aframe-mouse-cursor-component/master/dist/aframe-mouse-cursor-component.min.js",
+  "_source": "https://cdn.jsdelivr.net/gh/mayognaise/aframe-mouse-cursor-component@master/dist/aframe-mouse-cursor-component.min.js",
   "_target": "*",
-  "_originalSource": "https://rawgit.com/mayognaise/aframe-mouse-cursor-component/master/dist/aframe-mouse-cursor-component.min.js",
+  "_originalSource": "https://cdn.jsdelivr.net/gh/mayognaise/aframe-mouse-cursor-component@master/dist/aframe-mouse-cursor-component.min.js",
   "_direct": true
 }

@@ -6,8 +6,8 @@
   },
   "_release": "e-tag:W/\"1178590",
   "main": "index.js",
-  "_source": "https://cdn.rawgit.com/donmccurdy/aframe-extras/v3.13.1/dist/aframe-extras.min.js",
+  "_source": "https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v3.13.1/dist/aframe-extras.min.js",
   "_target": "*",
-  "_originalSource": "https://cdn.rawgit.com/donmccurdy/aframe-extras/v3.13.1/dist/aframe-extras.min.js",
+  "_originalSource": "https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v3.13.1/dist/aframe-extras.min.js",
   "_direct": true
 }

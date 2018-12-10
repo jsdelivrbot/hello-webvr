@@ -6,8 +6,8 @@
   },
   "_release": "e-tag:W/\"70b3ed1",
   "main": "index.js",
-  "_source": "https://rawgit.com/feiss/aframe-environment-component/master/dist/aframe-environment-component.js",
+  "_source": "https://cdn.jsdelivr.net/gh/feiss/aframe-environment-component@master/dist/aframe-environment-component.js",
   "_target": "*",
-  "_originalSource": "https://rawgit.com/feiss/aframe-environment-component/master/dist/aframe-environment-component.js",
+  "_originalSource": "https://cdn.jsdelivr.net/gh/feiss/aframe-environment-component@master/dist/aframe-environment-component.js",
   "_direct": true
 }

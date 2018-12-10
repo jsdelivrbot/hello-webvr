@@ -6,8 +6,8 @@
   },
   "_release": "e-tag:W/\"51f1ac7",
   "main": "index.js",
-  "_source": "https://cdn.rawgit.com/etiennepinchon/aframe-material/master/dist/aframe-material.min.js",
+  "_source": "https://cdn.jsdelivr.net/gh/etiennepinchon/aframe-material@master/dist/aframe-material.min.js",
   "_target": "*",
-  "_originalSource": "https://cdn.rawgit.com/etiennepinchon/aframe-material/master/dist/aframe-material.min.js",
+  "_originalSource": "https://cdn.jsdelivr.net/gh/etiennepinchon/aframe-material@master/dist/aframe-material.min.js",
   "_direct": true
 }

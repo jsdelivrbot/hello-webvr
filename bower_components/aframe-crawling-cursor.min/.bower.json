@@ -6,8 +6,8 @@
   },
   "_release": "e-tag:W/\"fa751ff",
   "main": "index.js",
-  "_source": "https://cdn.rawgit.com/jujunjun110/aframe-crawling-cursor/master/dist/aframe-crawling-cursor.min.js",
+  "_source": "https://cdn.jsdelivr.net/gh/jujunjun110/aframe-crawling-cursor@master/dist/aframe-crawling-cursor.min.js",
   "_target": "*",
-  "_originalSource": "https://cdn.rawgit.com/jujunjun110/aframe-crawling-cursor/master/dist/aframe-crawling-cursor.min.js",
+  "_originalSource": "https://cdn.jsdelivr.net/gh/jujunjun110/aframe-crawling-cursor@master/dist/aframe-crawling-cursor.min.js",
   "_direct": true
 }
